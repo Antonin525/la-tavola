@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>La Tavola — Restaurant italien à Grenoble · Pizzas napolitaines &amp; pâtes fraîches</title>
+  <meta name="description" content="La Tavola, restaurant italien au cœur de Grenoble : pizzas napolitaines cuites au feu de bois, pâtes fraîches maison, antipasti et desserts italiens. Réservez votre table, 12 rue de la République.">
+  <meta name="theme-color" content="#2b1d16">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="La Tavola — Restaurant italien à Grenoble">
+  <meta property="og:description" content="Pizzas napolitaines, pâtes fraîches maison et vins italiens, au cœur de Grenoble.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b1d16'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c9a46a'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Tavola",
+    "servesCuisine": ["Italienne", "Pizza napolitaine", "Pâtes fraîches"],
+    "priceRange": "€€",
+    "image": "images/hero.jpg",
+    "telephone": "+33 4 65 71 23 45",
+    "email": "bonjour@latavola-grenoble.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue de la République",
+      "postalCode": "38000",
+      "addressLocality": "Grenoble",
+      "addressCountry": "FR"
+    },
+    "openingHours": ["Tu-Sa 12:00-14:30", "Tu-Sa 19:00-22:30", "Su 12:00-15:00"],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ══════════ EN-TÊTE ══════════ -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="#accueil" aria-label="La Tavola — retour à l'accueil">
+        <span class="logo-mark" aria-hidden="true">T</span>
+        <span class="logo-text">
+          <span class="logo-name">La Tavola</span>
+          <span class="logo-sub">Cucina italiana · Grenoble</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#maison">La maison</a></li>
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#specialites">Spécialités</a></li>
+          <li><a href="#savoir-faire">Savoir-faire</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="#reservation">Réserver<span class="btn-arrow" aria-hidden="true">→</span></a>
+
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- menu mobile plein écran -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Navigation mobile">
+      <ul>
+        <li><a href="#maison">La maison</a></li>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#specialites">Spécialités</a></li>
+        <li><a href="#savoir-faire">Savoir-faire</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a class="btn btn-primary btn-block" href="#reservation">Réserver une table</a>
+      <p><a href="tel:+33465712345">04 65 71 23 45</a><br>12 rue de la République, Grenoble</p>
+    </div>
+  </div>
+
+  <main id="contenu">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/hero.jpg" alt="" class="hero-img" fetchpriority="high">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Trattoria contemporaine · Grenoble</p>
+        <h1 class="hero-title" id="hero-title">La Tavola</h1>
+        <p class="hero-tagline">L'Italie se partage <em>à table</em>.</p>
+        <p class="hero-text">Pizzas napolitaines cuites au feu de bois, pâtes fraîches roulées chaque matin et produits venus des meilleures maisons italiennes, à deux pas de la place Grenette.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reservation">Réserver une table<span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#carte">Voir la carte</a>
+        </div>
+      </div>
+
+      <div class="hero-bar">
+        <div class="container hero-bar-inner">
+          <p><span class="dot" aria-hidden="true"></span><span id="openStatus">Ouvert du mardi au dimanche</span></p>
+          <p class="hide-sm">12 rue de la République, 38000 Grenoble</p>
+          <a class="hero-scroll" href="#maison" aria-label="Découvrir la maison"><span>Découvrir</span><i aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 1 · LA MAISON ══════════ -->
+    <section class="section maison" id="maison" aria-labelledby="maison-title">
+      <div class="container maison-grid">
+        <div class="maison-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Notre histoire</p>
+          <h2 class="section-title reveal" id="maison-title">L'Italie au cœur <em>de Grenoble</em></h2>
+          <div class="maison-text">
+            <p class="lead reveal">Tout commence autour d'une grande table, celle d'une famille de Campanie où le dimanche durait jusqu'au soir. La Tavola est née de ce souvenir : un lieu où l'on prend le temps.</p>
+            <p class="reveal">Dans notre salle aux murs de pierre et aux lumières douces, la cuisine se fait à vue. Notre pizzaïolo façonne la pâte à la main, le four à bois chante à 450 °C, et les pâtes fraîches sèchent encore sur le marbre quand les premiers convives arrivent.</p>
+            <p class="reveal">Nous travaillons en direct avec une poignée de producteurs italiens — mozzarella di bufala de Caserta, tomates San Marzano, huile d'olive des Pouilles — et avec les maraîchers du Grésivaudan pour tout ce que nos montagnes font de meilleur.</p>
+          </div>
+          <p class="signature reveal">Marco &amp; Giulia, <span>fondateurs</span></p>
+
+          <ul class="stats" aria-label="La Tavola en chiffres">
+            <li class="reveal"><strong data-count="48">48</strong><span>heures de maturation pour notre pâte</span></li>
+            <li class="reveal"><strong data-count="450" data-suffix=" °C">450 °C</strong><span>dans le four à bois</span></li>
+            <li class="reveal"><strong data-count="100" data-suffix=" %">100 %</strong><span>pâtes et desserts faits maison</span></li>
+          </ul>
+        </div>
+
+        <div class="maison-visual">
+          <figure class="maison-main reveal reveal-img">
+            <img src="images/maison-salle.jpg" alt="La salle de La Tavola, tables en bois sous des suspensions aux lumières chaudes" loading="lazy" width="1100" height="1400">
+          </figure>
+          <figure class="maison-inset reveal reveal-img">
+            <img src="images/maison-pate.jpg" alt="Les mains du pizzaïolo présentant un pâton de pâte à pizza" loading="lazy" width="700" height="820">
+            <figcaption>Pâte maturée 48 h</figcaption>
+          </figure>
+          <span class="maison-badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#circ">fatto a mano · fatto con amore · </textPath></text></svg>
+            <em>dal<br>2014</em>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 2 · NOTRE CARTE ══════════ -->
+    <section class="section carte" id="carte" aria-labelledby="carte-title">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Menu de saison<span class="eyebrow-line" aria-hidden="true"></span></p>
+          <h2 class="section-title reveal" id="carte-title">Notre <em>carte</em></h2>
+          <p class="section-intro reveal">Une carte courte, qui suit les saisons et le marché. Choisissez une famille pour découvrir nos plats.</p>
+        </header>
+
+        <div class="carte-cats" role="tablist" aria-label="Catégories de la carte">
+          <button class="cat-card reveal" role="tab" id="tab-antipasti" aria-controls="panel-antipasti" aria-selected="true" type="button">
+            <span class="cat-img"><img src="images/carte-antipasti.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">01</span><span class="cat-name">Antipasti</span><span class="cat-from">dès 9 €</span></span>
+          </button>
+          <button class="cat-card reveal" role="tab" id="tab-pizzas" aria-controls="panel-pizzas" aria-selected="false" tabindex="-1" type="button">
+            <span class="cat-img"><img src="images/carte-pizzas.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">02</span><span class="cat-name">Pizzas napolitaines</span><span class="cat-from">dès 12 €</span></span>
+          </button>
+          <button class="cat-card reveal" role="tab" id="tab-pates" aria-controls="panel-pates" aria-selected="false" tabindex="-1" type="button">
+            <span class="cat-img"><img src="images/carte-pates.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">03</span><span class="cat-name">Pâtes fraîches</span><span class="cat-from">dès 16 €</span></span>
+          </button>
+          <button class="cat-card reveal" role="tab" id="tab-plats" aria-controls="panel-plats" aria-selected="false" tabindex="-1" type="button">
+            <span class="cat-img"><img src="images/carte-plats.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">04</span><span class="cat-name">Plats italiens</span><span class="cat-from">dès 22 €</span></span>
+          </button>
+          <button class="cat-card reveal" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1" type="button">
+            <span class="cat-img"><img src="images/carte-desserts.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">05</span><span class="cat-name">Desserts</span><span class="cat-from">dès 8 €</span></span>
+          </button>
+          <button class="cat-card reveal" role="tab" id="tab-vins" aria-controls="panel-vins" aria-selected="false" tabindex="-1" type="button">
+            <span class="cat-img"><img src="images/carte-vins.jpg" alt="" loading="lazy" width="800" height="1000"></span>
+            <span class="cat-body"><span class="cat-num">06</span><span class="cat-name">Vins italiens</span><span class="cat-from">verre dès 6 €</span></span>
+          </button>
+        </div>
+
+        <div class="carte-panels">
+          <div class="menu-panel is-active" role="tabpanel" id="panel-antipasti" aria-labelledby="tab-antipasti" tabindex="0">
+            <h3 class="panel-title">Antipasti <span>— pour commencer, ou pour partager</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Burrata des Pouilles</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">14 €</span></div><p>Tomates anciennes, basilic, huile d'olive Coratina, fleur de sel.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Vitello tonnato</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">15 €</span></div><p>Veau rosé tranché fin, sauce au thon et câpres de Pantelleria.</p></li>
+              <li><div class="mi-head"><h4>Planche Tavola</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">19 €</span></div><p>Prosciutto di Parma 24 mois, mortadelle à la pistache, pecorino, focaccia maison. Pour deux.</p><span class="tag">À partager</span></li>
+              <li><div class="mi-head"><h4>Arancini al ragù</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">11 €</span></div><p>Trois croquettes de riz safrané, cœur de ragù et mozzarella filante.</p></li>
+              <li><div class="mi-head"><h4>Bruschetta al pomodoro</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">9 €</span></div><p>Pain grillé au feu de bois, tomates confites, ail doux et origan.</p><span class="tag">Végétarien</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" role="tabpanel" id="panel-pizzas" aria-labelledby="tab-pizzas" tabindex="0" hidden>
+            <h3 class="panel-title">Pizzas napolitaines <span>— pâte maturée 48 h, cuite 90 secondes au feu de bois</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Margherita DOP</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">12 €</span></div><p>San Marzano, fior di latte d'Agerola, basilic frais, huile d'olive.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Bufalina</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">15 €</span></div><p>San Marzano, mozzarella di bufala campana DOP ajoutée à la sortie du four.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Diavola</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">15 €</span></div><p>Tomate, fior di latte, salame piquant de Calabre, miel de châtaignier.</p></li>
+              <li><div class="mi-head"><h4>Tartufo e funghi</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">19 €</span></div><p>Base blanche, crème de truffe, champignons des bois, stracciatella.</p><span class="tag">Signature</span></li>
+              <li><div class="mi-head"><h4>Mortadella e pistacchio</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">18 €</span></div><p>Fior di latte, mortadelle de Bologne, crème et éclats de pistache de Bronte.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" role="tabpanel" id="panel-pates" aria-labelledby="tab-pates" tabindex="0" hidden>
+            <h3 class="panel-title">Pâtes fraîches <span>— roulées chaque matin dans notre atelier</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Tagliatelle al ragù bolognese</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">19 €</span></div><p>Ragù de bœuf et porc mijoté six heures, parmigiano reggiano 30 mois.</p></li>
+              <li><div class="mi-head"><h4>Spaghettoni cacio e pepe</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">16 €</span></div><p>Pecorino romano, poivre noir torréfié, servis dans la meule.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Ravioli ricotta e limone</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">18 €</span></div><p>Ricotta de brebis, zeste de citron d'Amalfi, beurre noisette et sauge.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Linguine alle vongole</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">23 €</span></div><p>Palourdes, vin blanc, ail, piment doux et persil plat.</p></li>
+              <li><div class="mi-head"><h4>Pappardelle al cinghiale</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">22 €</span></div><p>Ragù de sanglier au Chianti, baies de genièvre, romarin.</p><span class="tag">Saison</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" role="tabpanel" id="panel-plats" aria-labelledby="tab-plats" tabindex="0" hidden>
+            <h3 class="panel-title">Plats italiens <span>— les grands classiques de nos nonne</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Ossobuco alla milanese</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">28 €</span></div><p>Jarret de veau braisé, gremolata, risotto au safran.</p><span class="tag">Signature</span></li>
+              <li><div class="mi-head"><h4>Filet de bar en croûte d'herbes</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">26 €</span></div><p>Chapelure aux herbes et citron, fregola sarda aux petits légumes.</p></li>
+              <li><div class="mi-head"><h4>Saltimbocca alla romana</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">24 €</span></div><p>Escalopes de veau, jambon de Parme et sauge, jus au marsala.</p></li>
+              <li><div class="mi-head"><h4>Parmigiana di melanzane</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">22 €</span></div><p>Aubergines fondantes, sauce tomate, mozzarella, parmesan gratiné.</p><span class="tag">Végétarien</span></li>
+              <li><div class="mi-head"><h4>Risotto ai funghi porcini</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">24 €</span></div><p>Carnaroli affiné, cèpes poêlés, mantecatura au parmesan.</p><span class="tag">Végétarien</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" tabindex="0" hidden>
+            <h3 class="panel-title">Desserts <span>— tous préparés dans notre cuisine</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Tiramisù della casa</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">9 €</span></div><p>Mascarpone, savoiardi imbibés d'espresso, cacao amer.</p><span class="tag">Signature</span></li>
+              <li><div class="mi-head"><h4>Panna cotta</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">8 €</span></div><p>Vanille de Madagascar, coulis de fruits rouges du Vercors.</p></li>
+              <li><div class="mi-head"><h4>Cannoli siciliani</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">9 €</span></div><p>Coques croustillantes garnies minute, ricotta, orange confite, pistache.</p></li>
+              <li><div class="mi-head"><h4>Affogato al caffè</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">8 €</span></div><p>Gelato fior di latte noyé d'un espresso serré, amaretti.</p></li>
+              <li><div class="mi-head"><h4>Caffè gourmand</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">11 €</span></div><p>Espresso et trois mignardises italiennes du moment.</p></li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" role="tabpanel" id="panel-vins" aria-labelledby="tab-vins" tabindex="0" hidden>
+            <h3 class="panel-title">Vins italiens <span>— prix au verre (12 cl) / à la bouteille</span></h3>
+            <ul class="menu-list">
+              <li><div class="mi-head"><h4>Prosecco Valdobbiadene DOCG</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">8 € / 38 €</span></div><p>Vénétie — fines bulles, poire et fleurs blanches.</p></li>
+              <li><div class="mi-head"><h4>Vermentino di Gallura</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">7 € / 34 €</span></div><p>Sardaigne — blanc salin et agrumes, parfait avec les vongole.</p></li>
+              <li><div class="mi-head"><h4>Chianti Classico DOCG</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">8 € / 39 €</span></div><p>Toscane — sangiovese, cerise noire et violette.</p></li>
+              <li><div class="mi-head"><h4>Primitivo di Manduria</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">6 € / 32 €</span></div><p>Pouilles — rouge généreux, fruits mûrs et épices douces.</p></li>
+              <li><div class="mi-head"><h4>Barolo DOCG</h4><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">— / 79 €</span></div><p>Piémont — nebbiolo, rose fanée, réglisse. Notre coup de cœur.</p><span class="tag">Sélection</span></li>
+            </ul>
+          </div>
+
+          <p class="carte-note">Prix nets, service compris. Liste des allergènes disponible sur demande. Pizzas sans gluten sur réservation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 3 · NOS SPÉCIALITÉS ══════════ -->
+    <section class="section specialites" id="specialites" aria-labelledby="spec-title">
+      <div class="container">
+        <header class="section-head split">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Les incontournables</p>
+            <h2 class="section-title reveal" id="spec-title">Nos <em>spécialités</em></h2>
+          </div>
+          <p class="section-intro reveal">Quatre assiettes qui racontent La Tavola — celles que nos habitués commandent les yeux fermés.</p>
+        </header>
+
+        <div class="spec-grid">
+          <article class="spec-card reveal">
+            <figure class="spec-img"><img src="images/spec-margherita.jpg" alt="Pizza margherita napolitaine, bords gonflés et légèrement grillés, posée sur une planche en bois" loading="lazy" width="1100" height="1300"></figure>
+            <div class="spec-body">
+              <span class="spec-num">N° 01</span>
+              <h3>Margherita DOP</h3>
+              <p>La reine de Naples : San Marzano, fior di latte d'Agerola et basilic, cuite 90 secondes au feu de bois.</p>
+              <span class="spec-price">12 €</span>
+            </div>
+          </article>
+          <article class="spec-card reveal">
+            <figure class="spec-img"><img src="images/spec-ragu.jpg" alt="Assiette de tagliatelle au ragù bolognese parsemées de parmesan" loading="lazy" width="1100" height="1300"></figure>
+            <div class="spec-body">
+              <span class="spec-num">N° 02</span>
+              <h3>Tagliatelle al ragù</h3>
+              <p>Six heures de mijotage à feu doux et des tagliatelle roulées le matin même. La recette de la nonna, sans raccourci.</p>
+              <span class="spec-price">19 €</span>
+            </div>
+          </article>
+          <article class="spec-card reveal">
+            <figure class="spec-img"><img src="images/spec-burrata.jpg" alt="Burrata crémeuse posée sur des tomates et des herbes fraîches" loading="lazy" width="1100" height="1300"></figure>
+            <div class="spec-body">
+              <span class="spec-num">N° 03</span>
+              <h3>Burrata des Pouilles</h3>
+              <p>Livrée deux fois par semaine depuis Andria, servie à température avec des tomates anciennes et notre huile Coratina.</p>
+              <span class="spec-price">14 €</span>
+            </div>
+          </article>
+          <article class="spec-card reveal">
+            <figure class="spec-img"><img src="images/spec-tiramisu.jpg" alt="Part de tiramisù aux couches de mascarpone et de biscuit, saupoudrée de cacao" loading="lazy" width="1100" height="1300"></figure>
+            <div class="spec-body">
+              <span class="spec-num">N° 04</span>
+              <h3>Tiramisù della casa</h3>
+              <p>Mascarpone monté à la main, espresso serré et cacao amer. Le dessert qu'on vient chercher de l'autre bout de la ville.</p>
+              <span class="spec-price">9 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 4 · SAVOIR-FAIRE ══════════ -->
+    <section class="section savoir" id="savoir-faire" aria-labelledby="savoir-title">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Notre savoir-faire<span class="eyebrow-line" aria-hidden="true"></span></p>
+          <h2 class="section-title reveal" id="savoir-title">Le geste juste, <em>chaque jour</em></h2>
+          <p class="section-intro reveal">Pas de secret, seulement du temps, de beaux produits et des mains patientes.</p>
+        </header>
+
+        <ol class="savoir-grid">
+          <li class="savoir-item reveal">
+            <figure><img src="images/savoir-pate.jpg" alt="Pizza enfournée dans un four à bois incandescent" loading="lazy" width="900" height="1100"></figure>
+            <span class="savoir-num">01</span>
+            <h3>Une pâte préparée avec soin</h3>
+            <p>Farine de type 00 du Molino Caputo, levain naturel et 48 heures de maturation lente pour une pâte légère et digeste.</p>
+          </li>
+          <li class="savoir-item reveal">
+            <figure><img src="images/savoir-produits.jpg" alt="Tomates cerises en grappe, pâtes fraîches et basilic sur un plan de travail" loading="lazy" width="900" height="1100"></figure>
+            <span class="savoir-num">02</span>
+            <h3>Des produits italiens</h3>
+            <p>Mozzarella di bufala DOP, tomates San Marzano, parmigiano reggiano affiné 30 mois : nous sélectionnons chaque producteur.</p>
+          </li>
+          <li class="savoir-item reveal">
+            <figure><img src="images/savoir-recettes.jpg" alt="Mains passant des pâtes fraîches dans un laminoir" loading="lazy" width="900" height="1100"></figure>
+            <span class="savoir-num">03</span>
+            <h3>Des recettes traditionnelles</h3>
+            <p>Transmises de génération en génération, de Naples à Bologne. Nous les respectons, et nous les servons comme là-bas.</p>
+          </li>
+          <li class="savoir-item reveal">
+            <figure><img src="images/savoir-maison.jpg" alt="Cuisinier façonnant des tagliatelle fraîches à la main" loading="lazy" width="900" height="1100"></figure>
+            <span class="savoir-num">04</span>
+            <h3>Une cuisine faite maison</h3>
+            <p>Pâtes, sauces, focaccia, desserts : tout est préparé ici, chaque jour, par notre équipe. Rien n'arrive tout fait.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════ 5 · GALERIE ══════════ -->
+    <section class="section galerie" id="galerie" aria-labelledby="galerie-title">
+      <div class="container">
+        <header class="section-head split">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>En images</p>
+            <h2 class="section-title reveal" id="galerie-title">La vie <em>à La Tavola</em></h2>
+          </div>
+          <div class="gal-filters reveal" role="group" aria-label="Filtrer la galerie">
+            <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">Tout</button>
+            <button type="button" class="chip" data-filter="plats" aria-pressed="false">Plats</button>
+            <button type="button" class="chip" data-filter="salle" aria-pressed="false">La salle</button>
+            <button type="button" class="chip" data-filter="ambiance" aria-pressed="false">Ambiance</button>
+          </div>
+        </header>
+
+        <ul class="gal-grid" id="galGrid">
+          <li class="gal-item" data-cat="salle"><button type="button" class="gal-btn"><img src="images/galerie-salle.jpg" alt="La salle en soirée, bar en bois sombre et lumières tamisées" loading="lazy" width="900" height="1150"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-pizzas.jpg" alt="Plusieurs pizzas et assiettes partagées sur une table en bois" loading="lazy" width="900" height="650"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-spaghetti.jpg" alt="Fourchette enroulée de spaghetti à la sauce tomate" loading="lazy" width="900" height="1150"></button></li>
+          <li class="gal-item" data-cat="ambiance"><button type="button" class="gal-btn"><img src="images/galerie-trinquer.jpg" alt="Des amis trinquent avec des verres de vin rouge" loading="lazy" width="900" height="650"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-fruits-de-mer.jpg" alt="Bol de fruits de mer à la sauce tomate accompagné de pain grillé" loading="lazy" width="900" height="1100"></button></li>
+          <li class="gal-item" data-cat="salle"><button type="button" class="gal-btn"><img src="images/galerie-salle-2.jpg" alt="Salle du restaurant avec banquettes et tables dressées" loading="lazy" width="900" height="650"></button></li>
+          <li class="gal-item" data-cat="ambiance"><button type="button" class="gal-btn"><img src="images/galerie-tablee.jpg" alt="Une grande tablée partage plusieurs plats" loading="lazy" width="900" height="1150"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-desserts.jpg" alt="Verrines de tiramisù sur un plateau en bois" loading="lazy" width="900" height="650"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-four.jpg" alt="Gros plan sur une pizza napolitaine à la croûte dorée" loading="lazy" width="900" height="1100"></button></li>
+          <li class="gal-item" data-cat="ambiance"><button type="button" class="gal-btn"><img src="images/galerie-aperitivo.jpg" alt="Aperitivo en terrasse : spritz, vin blanc et assiettes de pâtes" loading="lazy" width="900" height="650"></button></li>
+          <li class="gal-item" data-cat="ambiance"><button type="button" class="gal-btn"><img src="images/galerie-soiree.jpg" alt="Convives qui rient lors d'un dîner en soirée" loading="lazy" width="900" height="1100"></button></li>
+          <li class="gal-item" data-cat="plats"><button type="button" class="gal-btn"><img src="images/galerie-antipasti.jpg" alt="Planche de charcuterie italienne, olives et fromages" loading="lazy" width="900" height="650"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ 6 · AVIS ══════════ -->
+    <section class="section avis" id="avis" aria-labelledby="avis-title">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Ils sont passés à table<span class="eyebrow-line" aria-hidden="true"></span></p>
+          <h2 class="section-title reveal" id="avis-title">Ce qu'en disent <em>nos convives</em></h2>
+          <p class="demo-badge reveal"><span aria-hidden="true">i</span>Avis de démonstration — textes fictifs à remplacer par de vrais avis clients</p>
+        </header>
+
+        <div class="avis-track" id="avisTrack" tabindex="0" aria-label="Avis clients, faire défiler horizontalement">
+          <figure class="avis-card reveal">
+            <div class="stars" role="img" aria-label="Note : 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote><p>La meilleure pizza napolitaine que j'ai mangée hors d'Italie. La pâte est incroyablement légère, et le tiramisù vaut à lui seul le déplacement.</p></blockquote>
+            <figcaption><strong>Camille R.</strong><span>Dîner en amoureux · avis de démonstration</span></figcaption>
+          </figure>
+          <figure class="avis-card reveal">
+            <div class="stars" role="img" aria-label="Note : 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote><p>Un accueil chaleureux, une salle magnifique et des pâtes fraîches comme chez ma grand-mère à Bologne. On se sent vraiment en Italie.</p></blockquote>
+            <figcaption><strong>Lorenzo M.</strong><span>Repas de famille · avis de démonstration</span></figcaption>
+          </figure>
+          <figure class="avis-card reveal">
+            <div class="stars" role="img" aria-label="Note : 4 sur 5"><span aria-hidden="true">★★★★</span><span class="star-off" aria-hidden="true">★</span></div>
+            <blockquote><p>Belle carte des vins italiens et des conseils très justes. L'ossobuco était fondant. Pensez à réserver le week-end, c'est souvent complet.</p></blockquote>
+            <figcaption><strong>Sophie &amp; Hugo</strong><span>Samedi soir · avis de démonstration</span></figcaption>
+          </figure>
+          <figure class="avis-card reveal">
+            <div class="stars" role="img" aria-label="Note : 5 sur 5"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote><p>Nous y avons organisé un déjeuner d'équipe de douze personnes : service fluide, assiettes généreuses et tout le monde est reparti conquis.</p></blockquote>
+            <figcaption><strong>Julien P.</strong><span>Déjeuner d'affaires · avis de démonstration</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 7 · RÉSERVATION ══════════ -->
+    <section class="reservation" id="reservation" aria-labelledby="resa-title">
+      <div class="resa-bg" aria-hidden="true"><img src="images/reservation.jpg" alt="" loading="lazy"></div>
+      <div class="container resa-grid">
+        <div class="resa-copy">
+          <p class="eyebrow light reveal"><span class="eyebrow-line" aria-hidden="true"></span>Réservation</p>
+          <h2 class="section-title light reveal" id="resa-title">Réservez <em>votre table</em></h2>
+          <p class="reveal">Pour un dîner à deux, un repas de famille ou une grande tablée entre amis, nous vous gardons la meilleure place.</p>
+          <ul class="resa-points reveal">
+            <li>Confirmation par e-mail sous 2 heures</li>
+            <li>Groupes de plus de 10 personnes : appelez-nous</li>
+            <li>Annulation gratuite jusqu'à 24 h avant</li>
+          </ul>
+          <p class="resa-phone reveal">Par téléphone : <a href="tel:+33465712345">04 65 71 23 45</a></p>
+        </div>
+
+        <div class="resa-card reveal">
+          <form class="resa-form" id="resaForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <span class="label" id="guestsLabel">Nombre de personnes</span>
+                <div class="stepper" role="group" aria-labelledby="guestsLabel">
+                  <button type="button" class="step-btn" data-step="-1" aria-label="Retirer une personne">−</button>
+                  <output id="guestsOut" aria-live="polite">2</output>
+                  <button type="button" class="step-btn" data-step="1" aria-label="Ajouter une personne">+</button>
+                  <input type="hidden" name="guests" id="guests" value="2">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+                <span class="error" id="dateError" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <fieldset class="field">
+              <legend class="label">Heure</legend>
+              <div class="slots" id="slots">
+                <p class="slots-group">Midi</p>
+                <label class="slot"><input type="radio" name="time" value="12:00" required><span>12:00</span></label>
+                <label class="slot"><input type="radio" name="time" value="12:30"><span>12:30</span></label>
+                <label class="slot"><input type="radio" name="time" value="13:00"><span>13:00</span></label>
+                <label class="slot"><input type="radio" name="time" value="13:30"><span>13:30</span></label>
+                <p class="slots-group">Soir</p>
+                <label class="slot"><input type="radio" name="time" value="19:00"><span>19:00</span></label>
+                <label class="slot"><input type="radio" name="time" value="19:30"><span>19:30</span></label>
+                <label class="slot"><input type="radio" name="time" value="20:00"><span>20:00</span></label>
+                <label class="slot"><input type="radio" name="time" value="20:30"><span>20:30</span></label>
+                <label class="slot"><input type="radio" name="time" value="21:00"><span>21:00</span></label>
+                <label class="slot"><input type="radio" name="time" value="21:30"><span>21:30</span></label>
+              </div>
+              <span class="error" id="timeError" aria-live="polite"></span>
+            </fieldset>
+
+            <div class="form-row">
+              <div class="field">
+                <label class="label" for="name">Nom</label>
+                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Votre nom">
+                <span class="error" id="nameError" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label class="label" for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required placeholder="06 12 34 56 78">
+                <span class="error" id="phoneError" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr">
+              <span class="error" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label class="label" for="note">Une occasion particulière ? <span class="optional">(facultatif)</span></label>
+              <textarea id="note" name="note" rows="2" placeholder="Anniversaire, allergie, chaise haute…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-submit">
+              <span class="btn-label">Réserver ma table</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <div class="resa-success" id="resaSuccess" hidden tabindex="-1">
+            <span class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+            </span>
+            <h3>Grazie mille !</h3>
+            <p id="resaSummary"></p>
+            <p class="demo-note">Démonstration : aucune réservation n'a été transmise. Ce formulaire sera relié à votre outil de réservation lors de la mise en ligne.</p>
+            <button type="button" class="btn btn-ghost-dark" id="resaReset">Nouvelle réservation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 8 · CONTACT ══════════ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal"><span class="eyebrow-line" aria-hidden="true"></span>Nous trouver</p>
+          <h2 class="section-title reveal" id="contact-title">Venez <em>nous voir</em></h2>
+
+          <dl class="contact-list">
+            <div class="reveal">
+              <dt>Adresse</dt>
+              <dd><address>12 rue de la République<br>38000 Grenoble</address><span class="muted">Tram A &amp; B — arrêt Hubert Dubedout / Maison du Tourisme</span></dd>
+            </div>
+            <div class="reveal">
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+33465712345">04 65 71 23 45</a></dd>
+            </div>
+            <div class="reveal">
+              <dt>E-mail</dt>
+              <dd><a href="mailto:bonjour@latavola-grenoble.fr">bonjour@latavola-grenoble.fr</a></dd>
+            </div>
+            <div class="reveal">
+              <dt>Horaires</dt>
+              <dd>
+                <table class="hours" id="hoursTable">
+                  <caption class="sr-only">Horaires d'ouverture</caption>
+                  <tbody>
+                    <tr data-days="2,3,4,5,6"><th scope="row">Mardi — Samedi</th><td>12:00 – 14:30<br>19:00 – 22:30</td></tr>
+                    <tr data-days="0"><th scope="row">Dimanche</th><td>12:00 – 15:00</td></tr>
+                    <tr data-days="1"><th scope="row">Lundi</th><td>Fermé</td></tr>
+                  </tbody>
+                </table>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="contact-actions reveal">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=12+rue+de+la+R%C3%A9publique%2C+38000+Grenoble" target="_blank" rel="noopener">Voir l'itinéraire<span class="btn-arrow" aria-hidden="true">↗</span><span class="sr-only"> (ouvre Google Maps dans un nouvel onglet)</span></a>
+            <a class="btn btn-ghost-dark" href="tel:+33465712345">Appeler</a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal reveal-img">
+          <iframe title="Plan d'accès : 12 rue de la République, Grenoble" src="https://www.google.com/maps?q=12+rue+de+la+R%C3%A9publique,+38000+Grenoble&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-card">
+            <span class="logo-mark small" aria-hidden="true">T</span>
+            <div><strong>La Tavola</strong><span>12 rue de la République</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo logo-light" href="#accueil" aria-label="La Tavola — retour en haut de page">
+            <span class="logo-mark" aria-hidden="true">T</span>
+            <span class="logo-text"><span class="logo-name">La Tavola</span><span class="logo-sub">Cucina italiana · Grenoble</span></span>
+          </a>
+          <p>Pizzas napolitaines, pâtes fraîches et vins italiens, au cœur de Grenoble.</p>
+          <a class="btn btn-primary btn-sm" href="#reservation">Réserver une table<span class="btn-arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <nav class="footer-col" aria-label="Plan du site">
+          <h2 class="footer-title">Navigation</h2>
+          <ul>
+            <li><a href="#maison">La maison</a></li>
+            <li><a href="#carte">La carte</a></li>
+            <li><a href="#specialites">Spécialités</a></li>
+            <li><a href="#savoir-faire">Savoir-faire</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#avis">Avis</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Horaires</h2>
+          <ul class="footer-hours">
+            <li><span>Mar — Sam</span><span>12:00 – 14:30<br>19:00 – 22:30</span></li>
+            <li><span>Dimanche</span><span>12:00 – 15:00</span></li>
+            <li><span>Lundi</span><span>Fermé</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Contact</h2>
+          <address>
+            12 rue de la République<br>38000 Grenoble<br>
+            <a href="tel:+33465712345">04 65 71 23 45</a><br>
+            <a href="mailto:bonjour@latavola-grenoble.fr">bonjour@latavola-grenoble.fr</a>
+          </address>
+          <ul class="socials" aria-label="Réseaux sociaux">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook (nouvel onglet)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></li>
+            <li><a href="https://www.tripadvisor.fr/" target="_blank" rel="noopener" aria-label="Tripadvisor (nouvel onglet)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="13" r="3.5"/><circle cx="17" cy="13" r="3.5"/><path d="M2 8.5h20M12 8.5c-2-1.6-5-2.2-8-1.2M12 8.5c2-1.6 5-2.2 8-1.2"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-giant" aria-hidden="true">La Tavola</p>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> La Tavola — Grenoble. Tous droits réservés.</p>
+        <p>Site de démonstration · Photos Unsplash</p>
+        <a href="#accueil" class="to-top">Haut de page <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIGHTBOX ══════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie photo" hidden>
+    <button class="lb-close" type="button" aria-label="Fermer la galerie">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Photo précédente">←</button>
+    <figure class="lb-figure">
+      <img id="lbImg" src="images/galerie-salle.jpg" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Photo suivante">→</button>
+    <p class="lb-count" id="lbCount" aria-live="polite"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
